@@ -9,7 +9,7 @@ html{
 #page-top{
     background: url(../assets/img/assinatura-tablet.webp);
     background-size: cover;
-    min-height: 100vh;
+    height: 100vh;
     /* background-position-y: -80vh; */
     background-attachment: fixed;
     background-repeat: no-repeat;
