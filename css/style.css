@@ -1,0 +1,92 @@
+html{
+    scroll-behavior: smooth;
+}
+
+#logo{
+    filter: drop-shadow(2px 2px 5px #000000);
+}
+
+#page-top{
+    background: url(../assets/img/assinatura-tablet.webp);
+    background-size: cover;
+    min-height: 100vh;
+    /* background-position-y: -80vh; */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /* background-position-x: -40vw; */
+    /* margin-top: 10vh; */
+
+}
+
+
+#assinatura{
+    background: url(../assets/img/pastas.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-y: -20vh;
+
+}
+
+nav{
+    background-color: rgb(0, 0, 0, 0);
+    color: aliceblue;
+    position: fixed;
+}
+
+ul{
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    color: white;
+}
+
+#logo{
+    filter: drop-shadow(5px 5px 4px #000000);
+}
+
+.menu:hover{
+    background-color: white;
+    color: #000000;
+    text-decoration: none;
+    text-shadow: 4px 3px 10px #000000;
+
+
+}
+
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* display 3 */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(33.333%);
+    }
+    
+    .carousel-inner .carousel-item-left.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.333%);
+    }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+  transform: translateX(0);
+}
+
